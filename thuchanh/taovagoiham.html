@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo Và Gọi Hàm</title>
+</head>
+
+<body>
+    <script>
+
+        function output(call) {
+            let result = "";
+            if (call) {
+                result = "Cảm ơn bạn đã gọi cho tôi.";
+            } else {
+                result = "Mong rằng mọi điều sẽ đến với bạn.";
+            }
+            return result;
+        }
+
+        let between = confirm("Bạn có muốn gọi cho tôi không? ^^");
+        let input = output(between);
+        alert(input);
+
+    </script>
+</body>
+
+</html>

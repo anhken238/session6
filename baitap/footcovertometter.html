@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyển đổi giữa met và foot</title>
+</head>
+<div>
+    Nhập số foot :
+    <input type="number" id="inputfoot" oninput="foottometter(this.value)" onchange="foottometter(this.value)">
+    <p>Metter <span id="resultfoot"></span></p>
+</div>
+<div>
+    Nhập số metter :
+    <input type="number" id="inputmetter" oninput="mettertofoot(this.value)" onchange="mettertofoot(this.value)">
+    <p>foot <span id="resultmetter"></span></p>
+</div>
+
+<body>
+    <script>
+        function foottometter(numfoot) {
+            let foot = parseFloat(numfoot);
+            document.getElementById("resultfoot").innerHTML = 0.305 * foot;
+        }
+
+        function mettertofoot(nummetter) {
+            let metter = parseFloat(nummetter);
+            document.getElementById("resultmetter").innerHTML = 3.279 * metter;
+
+        }
+    </script>
+</body>
+
+</html>
